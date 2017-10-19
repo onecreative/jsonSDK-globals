@@ -13,11 +13,11 @@ exports.jsonGlobals = function (req,res) {
 	}else {
 		//continue on
 		if ([undefined,''].indexOf(req.query.appid) === -1) {
-			var referer = req.get('Referer') || '';
-			referer = referer.match(/\/_system\/apps\/.*?\//)[0] || '';
-			builderPath = referer.replace(/http(s??):\/\//,'');
+			var builderPath = req.get('Referer') || '';
+			builderPath = builderPath.match(/\/_system\/apps\/.*?\//)[0] || '';
+			builderPath = builderPath.replace(/http(s??):\/\//,'');
 			jsonGlobals._appID = req.query.appid;
-			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'');
+			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'').replace(/http(s??):\/\//,'');
 			jsonGlobals.builderPath = builderPath;
 			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/';
 			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.appid+'/';
