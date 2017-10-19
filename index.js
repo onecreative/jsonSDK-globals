@@ -19,7 +19,6 @@ exports.jsonGlobals = function (req,res) {
 			jsonGlobals._appID = req.query.appid;
 			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'');
 			jsonGlobals.builderPath = builderPath;
-			if (jsonGlobals.builderPath !== null) jsonGlobals.builderPath = jsonGlobals.builderPath[0];
 			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/';
 			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.appid+'/';
 			jsonGlobals.jsonPath = jsonGlobals.builderPath+'public/apps/'+req.query.appid+'/json/';
