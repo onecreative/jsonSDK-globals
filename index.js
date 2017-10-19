@@ -27,7 +27,7 @@ exports.jsonGlobals = function (req,res) {
 			jsonGlobals.tempPath = jsonGlobals.builderPath+'public/apps/'+req.query.appid+'/json/temp/';
 			jsonGlobals.destinationPrefix = 'APP_'+req.query.appid+'_';
 			jsonGlobals.tempName = 'APP_'+req.query.appid+'_temp';
-			res.send(jsonGlobals);
+			res.send(JSON.stringify(jsonGlobals));
 		}else {
 			var errors = {};
 			if ([undefined,''].indexOf(req.query.appid) > -1) errors.id = 'Your appID was not included in your request.';
