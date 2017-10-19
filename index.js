@@ -14,22 +14,22 @@ exports.jsonGlobals = function (req,res) {
 		res.status(204).send('');
 	}else {
 		//continue on
-		if ([undefined,''].indexOf(req.body.appID) === -1) {
-			jsonGlobals._appID = req.body.appID;
+		if ([undefined,''].indexOf(req.query.id) === -1) {
+			jsonGlobals._appID = req.query.id;
 			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'');
 			jsonGlobals.builderPath = referer.match(/\/_system\/apps\/.*?\//);
 			if (jsonGlobals.builderPath !== null) jsonGlobals.builderPath = jsonGlobals.builderPath[0];
 			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/',
-			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.body.appID+'/',
-			jsonGlobals.jsonPath = jsonGlobals.builderPath+'public/apps/'+req.body.appID+'/json/',
-			jsonGlobals.uploadPath = jsonGlobals.builderPath+'public/apps/'+req.body.appID+'/uploads/',
-			jsonGlobals.tempPath = jsonGlobals.builderPath+'public/apps/'+req.body.appID+'/json/temp/',
-			jsonGlobals.destinationPrefix = 'APP_'+req.body.appID+'_',
-			jsonGlobals.tempName = 'APP_'+req.body.appID+'_temp'
+			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/',
+			jsonGlobals.jsonPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/',
+			jsonGlobals.uploadPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/uploads/',
+			jsonGlobals.tempPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/temp/',
+			jsonGlobals.destinationPrefix = 'APP_'+req.query.id+'_',
+			jsonGlobals.tempName = 'APP_'+req.query.id+'_temp'
 			res.send(jsonGlobals);
 		}else {
 			var errors = {};
-			if ([undefined,''].indexOf(req.body.appID) > -1) errors.appID = 'Your appID was not included in your request.';
+			if ([undefined,''].indexOf(req.query.id) > -1) errors.id = 'Your appID was not included in your request.';
 			res.send(JSON.stringify(errors));
 		}
 	}
