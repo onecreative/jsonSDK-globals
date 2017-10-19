@@ -1,4 +1,4 @@
-exports.globals = {
+var globals = {
 	id: 'globals',
 	_type: 'file',
 	_appID: '',
@@ -4454,3 +4454,5 @@ exports.globals = {
 		}
 	}
 };
+
+exports.globals = globals;
