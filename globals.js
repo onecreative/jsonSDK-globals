@@ -284,112 +284,112 @@ exports.globals = {
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'weight',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22six',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'releaseDate',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22t77',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'expiryDate',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22tgo',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'createDate',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22tqu',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'lastUpdateDate',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22tyx',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'enabled',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22u9b',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'slug',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22urq',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'description',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22v29',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'roleId',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22vas',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'createdBy',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22vi1',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'submittedBy',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22vpa',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'address',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22vwi',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'city',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w22w37',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'state',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w25s20',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'zipCode',
-						type: '"',
+						type: '',
 						required: false
 					}, {
 						id: 'j8w25sgu',
 						_parent: 'j8w1wgbh',
 						_type: 'record',
 						name: 'country',
-						type: '"',
+						type: '',
 						required: false
 					}]
 				},
@@ -415,7 +415,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'text',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s0w',
 							_parent: 'j8w410iu',
@@ -426,7 +426,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -436,10 +436,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz42',
 								_parent: 'j8vz2s0w',
@@ -449,7 +449,7 @@ exports.globals = {
 								default: 6,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -506,7 +506,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz44',
 								_parent: 'j8vz2s0w',
@@ -516,7 +516,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz45',
 								_parent: 'j8vz2s0w',
@@ -526,7 +526,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -542,7 +542,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz47',
 								_parent: 'j8vz2s0x',
@@ -552,7 +552,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -568,7 +568,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}, {
@@ -588,7 +588,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -598,10 +598,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4b',
 								_parent: 'j8vz2s0z',
@@ -611,7 +611,7 @@ exports.globals = {
 								default: 4,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -668,7 +668,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4d',
 								_parent: 'j8vz2s0z',
@@ -678,7 +678,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4e',
 								_parent: 'j8vz2s0z',
@@ -688,7 +688,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -704,7 +704,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4g',
 								_parent: 'j8vz2s10',
@@ -714,7 +714,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -730,7 +730,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}, {
@@ -750,7 +750,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -760,10 +760,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4k',
 								_parent: 'j8vz2s12',
@@ -773,7 +773,7 @@ exports.globals = {
 								default: 1,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -830,7 +830,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4m',
 								_parent: 'j8vz2s12',
@@ -840,7 +840,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4n',
 								_parent: 'j8vz2s12',
@@ -850,7 +850,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -866,7 +866,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4p',
 								_parent: 'j8vz2s13',
@@ -876,7 +876,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -902,7 +902,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'number',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s16',
 							_parent: 'j8w4q0kp',
@@ -913,7 +913,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -923,10 +923,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4s',
 								_parent: 'j8vz2s16',
@@ -936,7 +936,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -993,7 +993,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4u',
 								_parent: 'j8vz2s16',
@@ -1003,7 +1003,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4v',
 								_parent: 'j8vz2s16',
@@ -1013,7 +1013,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -1029,7 +1029,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4x',
 								_parent: 'j8vz2s17',
@@ -1039,7 +1039,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -1057,7 +1057,7 @@ exports.globals = {
 								min: 0,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz4z',
 								_parent: 'j8vz2s18',
@@ -1069,7 +1069,7 @@ exports.globals = {
 								min: null,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz50',
 								_parent: 'j8vz2s18',
@@ -1081,7 +1081,7 @@ exports.globals = {
 								min: null,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz51',
 								_parent: 'j8vz2s18',
@@ -1093,7 +1093,7 @@ exports.globals = {
 								min: null,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz52',
 								_parent: 'j8vz2s18',
@@ -1103,7 +1103,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}, {
@@ -1112,7 +1112,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'range',
 						default: false,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s19',
 							_parent: 'j8w4q0vx',
@@ -1123,7 +1123,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -1133,10 +1133,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz55',
 								_parent: 'j8vz2s19',
@@ -1146,7 +1146,7 @@ exports.globals = {
 								default: 4,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -1203,7 +1203,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz57',
 								_parent: 'j8vz2s19',
@@ -1213,7 +1213,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz58',
 								_parent: 'j8vz2s19',
@@ -1223,7 +1223,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -1239,7 +1239,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5a',
 								_parent: 'j8vz2s1a',
@@ -1249,7 +1249,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -1267,7 +1267,7 @@ exports.globals = {
 								min: 0,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5c',
 								_parent: 'j8vz2s1b',
@@ -1279,7 +1279,7 @@ exports.globals = {
 								min: null,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5d',
 								_parent: 'j8vz2s1b',
@@ -1291,7 +1291,7 @@ exports.globals = {
 								min: null,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5e',
 								_parent: 'j8vz2s1b',
@@ -1303,7 +1303,7 @@ exports.globals = {
 								min: null,
 								max: null,
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5f',
 								_parent: 'j8vz2s1b',
@@ -1313,7 +1313,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5g',
 								_parent: 'j8vz2s1b',
@@ -1323,7 +1323,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}]
@@ -1343,7 +1343,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'widget',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1d',
 							_parent: 'j8w4r0ot',
@@ -1354,7 +1354,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -1364,10 +1364,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5j',
 								_parent: 'j8vz2s1d',
@@ -1377,7 +1377,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -1434,7 +1434,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5l',
 								_parent: 'j8vz2s1d',
@@ -1444,7 +1444,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5m',
 								_parent: 'j8vz2s1d',
@@ -1454,7 +1454,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -1470,7 +1470,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5o',
 								_parent: 'j8vz2s1e',
@@ -1480,7 +1480,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -1496,7 +1496,7 @@ exports.globals = {
 								default: 'utc',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: true,
 								options: [{
 									text: 'utc',
@@ -1544,7 +1544,7 @@ exports.globals = {
 								default: 'MM-DD-YYYY',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: true,
 								options: [{
 									text: 'utc',
@@ -1642,7 +1642,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'url',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1h',
 							_parent: 'j8w4skps',
@@ -1653,7 +1653,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -1663,10 +1663,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5x',
 								_parent: 'j8vz2s1h',
@@ -1676,7 +1676,7 @@ exports.globals = {
 								default: 6,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -1733,7 +1733,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz5z',
 								_parent: 'j8vz2s1h',
@@ -1743,7 +1743,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz60',
 								_parent: 'j8vz2s1h',
@@ -1753,7 +1753,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -1769,7 +1769,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz62',
 								_parent: 'j8vz2s1i',
@@ -1779,7 +1779,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -1795,7 +1795,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz64',
 								_parent: 'j8vz2s1j',
@@ -1805,7 +1805,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}, {
@@ -1814,7 +1814,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'email',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1k',
 							_parent: 'j8w4skyh',
@@ -1825,7 +1825,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -1835,10 +1835,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz67',
 								_parent: 'j8vz2s1k',
@@ -1848,7 +1848,7 @@ exports.globals = {
 								default: 6,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -1905,7 +1905,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz69',
 								_parent: 'j8vz2s1k',
@@ -1915,7 +1915,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6a',
 								_parent: 'j8vz2s1k',
@@ -1925,7 +1925,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -1941,7 +1941,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6c',
 								_parent: 'j8vz2s1l',
@@ -1951,7 +1951,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -1967,7 +1967,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6e',
 								_parent: 'j8vz2s1m',
@@ -1977,7 +1977,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}, {
@@ -1986,7 +1986,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'phone',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1n',
 							_parent: 'j8w4sl7l',
@@ -1997,7 +1997,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -2007,10 +2007,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6h',
 								_parent: 'j8vz2s1n',
@@ -2020,7 +2020,7 @@ exports.globals = {
 								default: 6,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -2077,7 +2077,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6j',
 								_parent: 'j8vz2s1n',
@@ -2087,7 +2087,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6k',
 								_parent: 'j8vz2s1n',
@@ -2097,7 +2097,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -2113,7 +2113,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6m',
 								_parent: 'j8vz2s1o',
@@ -2123,7 +2123,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -2139,7 +2139,7 @@ exports.globals = {
 								default: '(xxx) xxx-xxxx',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: true,
 								options: [{
 									text: '(xxx) xxx-xxxx',
@@ -2172,7 +2172,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6p',
 								_parent: 'j8vz2s1p',
@@ -2182,7 +2182,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}]
@@ -2202,7 +2202,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'checkbox',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1r',
 							_parent: 'j8w4tz67',
@@ -2213,7 +2213,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -2223,10 +2223,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6s',
 								_parent: 'j8vz2s1r',
@@ -2236,7 +2236,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -2293,7 +2293,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6u',
 								_parent: 'j8vz2s1r',
@@ -2303,7 +2303,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6v',
 								_parent: 'j8vz2s1r',
@@ -2313,7 +2313,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -2329,7 +2329,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz6x',
 								_parent: 'j8vz2s1s',
@@ -2339,7 +2339,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -2354,7 +2354,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'radio',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1u',
 							_parent: 'j8w4tzf0',
@@ -2365,7 +2365,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -2375,10 +2375,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz70',
 								_parent: 'j8vz2s1u',
@@ -2388,7 +2388,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -2445,7 +2445,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz72',
 								_parent: 'j8vz2s1u',
@@ -2455,7 +2455,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz73',
 								_parent: 'j8vz2s1u',
@@ -2465,7 +2465,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -2481,7 +2481,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz75',
 								_parent: 'j8vz2s1v',
@@ -2491,7 +2491,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -2506,7 +2506,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'select',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s1x',
 							_parent: 'j8w4uhch',
@@ -2517,7 +2517,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -2527,10 +2527,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz78',
 								_parent: 'j8vz2s1x',
@@ -2540,7 +2540,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -2597,7 +2597,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7a',
 								_parent: 'j8vz2s1x',
@@ -2607,7 +2607,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7b',
 								_parent: 'j8vz2s1x',
@@ -2617,7 +2617,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -2633,7 +2633,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7d',
 								_parent: 'j8vz2s1y',
@@ -2643,7 +2643,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -2669,7 +2669,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'textarea',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s21',
 							_parent: 'j8w4wchp',
@@ -2680,7 +2680,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -2690,10 +2690,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7g',
 								_parent: 'j8vz2s21',
@@ -2703,7 +2703,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -2760,7 +2760,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7i',
 								_parent: 'j8vz2s21',
@@ -2770,7 +2770,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7j',
 								_parent: 'j8vz2s21',
@@ -2780,7 +2780,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -2796,7 +2796,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7l',
 								_parent: 'j8vz2s22',
@@ -2806,7 +2806,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -2821,7 +2821,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'wysiwyg',
 						default: false,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s24',
 							_parent: 'j8w4wcsr',
@@ -2832,7 +2832,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -2842,10 +2842,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7o',
 								_parent: 'j8vz2s24',
@@ -2855,7 +2855,7 @@ exports.globals = {
 								default: 2,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -2912,7 +2912,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7q',
 								_parent: 'j8vz2s24',
@@ -2922,7 +2922,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7r',
 								_parent: 'j8vz2s24',
@@ -2932,7 +2932,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -2948,7 +2948,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7t',
 								_parent: 'j8vz2s25',
@@ -2958,7 +2958,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -2974,7 +2974,7 @@ exports.globals = {
 								default: 'basic',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'basic',
@@ -3005,7 +3005,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'video',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s28',
 							_parent: 'j8w4z22m',
@@ -3016,7 +3016,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -3026,10 +3026,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7x',
 								_parent: 'j8vz2s28',
@@ -3039,7 +3039,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -3096,7 +3096,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz7z',
 								_parent: 'j8vz2s28',
@@ -3106,7 +3106,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz80',
 								_parent: 'j8vz2s28',
@@ -3116,7 +3116,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -3132,7 +3132,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz82',
 								_parent: 'j8vz2s29',
@@ -3142,7 +3142,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -3157,7 +3157,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'audio',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2b',
 							_parent: 'j8w4z2ax',
@@ -3168,7 +3168,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -3178,10 +3178,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz85',
 								_parent: 'j8vz2s2b',
@@ -3191,7 +3191,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -3248,7 +3248,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz87',
 								_parent: 'j8vz2s2b',
@@ -3258,7 +3258,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz88',
 								_parent: 'j8vz2s2b',
@@ -3268,7 +3268,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -3284,7 +3284,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8a',
 								_parent: 'j8vz2s2c',
@@ -3294,7 +3294,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -3309,7 +3309,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'img',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2e',
 							_parent: 'j8w4z2jb',
@@ -3320,7 +3320,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -3330,10 +3330,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8d',
 								_parent: 'j8vz2s2e',
@@ -3343,7 +3343,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -3400,7 +3400,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8f',
 								_parent: 'j8vz2s2e',
@@ -3410,7 +3410,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8g',
 								_parent: 'j8vz2s2e',
@@ -3420,7 +3420,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -3436,7 +3436,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8i',
 								_parent: 'j8vz2s2f',
@@ -3446,7 +3446,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -3461,7 +3461,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'document',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2h',
 							_parent: 'j8w4z2su',
@@ -3472,7 +3472,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -3482,10 +3482,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8l',
 								_parent: 'j8vz2s2h',
@@ -3495,7 +3495,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -3552,7 +3552,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8n',
 								_parent: 'j8vz2s2h',
@@ -3562,7 +3562,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8o',
 								_parent: 'j8vz2s2h',
@@ -3572,7 +3572,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -3588,7 +3588,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8q',
 								_parent: 'j8vz2s2i',
@@ -3598,7 +3598,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -3624,7 +3624,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'file',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2l',
 							_parent: 'j8w4z30t',
@@ -3635,7 +3635,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -3645,10 +3645,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8t',
 								_parent: 'j8vz2s2l',
@@ -3658,7 +3658,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -3715,7 +3715,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8v',
 								_parent: 'j8vz2s2l',
@@ -3725,7 +3725,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8w',
 								_parent: 'j8vz2s2l',
@@ -3735,7 +3735,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -3751,7 +3751,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz8y',
 								_parent: 'j8vz2s2m',
@@ -3761,7 +3761,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -3777,7 +3777,7 @@ exports.globals = {
 								default: '/images',
 								type: 'text',
 								required: true,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz90',
 								_parent: 'j8vz2s2n',
@@ -3787,7 +3787,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz91',
 								_parent: 'j8vz2s2n',
@@ -3797,7 +3797,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz92',
 								_parent: 'j8vz2s2n',
@@ -3807,7 +3807,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}]
@@ -3827,7 +3827,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'select',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2p',
 							_parent: 'j8w52lq8',
@@ -3838,7 +3838,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -3848,10 +3848,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz95',
 								_parent: 'j8vz2s2p',
@@ -3861,7 +3861,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -3918,7 +3918,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz97',
 								_parent: 'j8vz2s2p',
@@ -3928,7 +3928,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz98',
 								_parent: 'j8vz2s2p',
@@ -3938,7 +3938,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -3954,7 +3954,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9a',
 								_parent: 'j8vz2s2q',
@@ -3964,7 +3964,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -3980,7 +3980,7 @@ exports.globals = {
 								default: 'app',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'App Table',
@@ -4004,10 +4004,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'list',
 								label: 'List',
-								default: '"',
+								default: '',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: []
 							}, {
@@ -4019,7 +4019,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9e',
 								_parent: 'j8vz2s2r',
@@ -4029,7 +4029,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}, {
@@ -4038,7 +4038,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'radio',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2s',
 							_parent: 'j8w52m2l',
@@ -4049,7 +4049,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -4059,10 +4059,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9h',
 								_parent: 'j8vz2s2s',
@@ -4072,7 +4072,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -4129,7 +4129,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9j',
 								_parent: 'j8vz2s2s',
@@ -4139,7 +4139,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9k',
 								_parent: 'j8vz2s2s',
@@ -4149,7 +4149,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -4165,7 +4165,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9m',
 								_parent: 'j8vz2s2t',
@@ -4175,7 +4175,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -4191,7 +4191,7 @@ exports.globals = {
 								default: 'app',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'App Table',
@@ -4215,10 +4215,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'list',
 								label: 'List',
-								default: '"',
+								default: '',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: []
 							}, {
@@ -4230,7 +4230,7 @@ exports.globals = {
 								default: 75,
 								type: 'number',
 								required: false,
-								attr: '"',
+								attr: '',
 								min: 20,
 								max: null
 							}]
@@ -4241,7 +4241,7 @@ exports.globals = {
 						_type: 'record',
 						name: 'radio',
 						default: true,
-						attr: '"',
+						attr: '',
 						layout: {
 							id: 'j8vz2s2v',
 							_parent: 'j8w531zj',
@@ -4252,7 +4252,7 @@ exports.globals = {
 								_type: 'record',
 								name: 'label',
 								label: 'Label',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: true,
 								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
@@ -4262,10 +4262,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'tooltip',
 								label: 'Tooltip',
-								default: '"',
+								default: '',
 								type: 'text',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9s',
 								_parent: 'j8vz2s2v',
@@ -4275,7 +4275,7 @@ exports.globals = {
 								default: 3,
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'shrink',
@@ -4332,7 +4332,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9u',
 								_parent: 'j8vz2s2v',
@@ -4342,7 +4342,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9v',
 								_parent: 'j8vz2s2v',
@@ -4352,7 +4352,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						validation: {
@@ -4368,7 +4368,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}, {
 								id: 'j8w6oz9x',
 								_parent: 'j8vz2s2w',
@@ -4378,7 +4378,7 @@ exports.globals = {
 								default: false,
 								type: 'boolean',
 								required: false,
-								attr: '"'
+								attr: ''
 							}]
 						},
 						options: {
@@ -4394,7 +4394,7 @@ exports.globals = {
 								default: 'app',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: [{
 									text: 'App Table',
@@ -4418,10 +4418,10 @@ exports.globals = {
 								_type: 'record',
 								name: 'list',
 								label: 'List',
-								default: '"',
+								default: '',
 								type: 'select',
 								required: true,
-								attr: '"',
+								attr: '',
 								editable: false,
 								options: []
 							}, {
@@ -4433,7 +4433,7 @@ exports.globals = {
 								default: 75,
 								type: 'number',
 								required: false,
-								attr: '"',
+								attr: '',
 								min: 20,
 								max: null
 							}, {
@@ -4445,7 +4445,7 @@ exports.globals = {
 								default: true,
 								type: 'boolean',
 								required: true,
-								attr: '"'
+								attr: ''
 							}]
 						}
 					}]
