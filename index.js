@@ -24,7 +24,7 @@ exports.jsonGlobals = function (req,res) {
 			jsonGlobals.uploadPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/uploads/',
 			jsonGlobals.tempPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/temp/',
 			jsonGlobals.destinationPrefix = 'APP_'+req.query.id+'_',
-			jsonGlobals.tempName = 'APP_'+req.query.id+'_temp'
+			jsonGlobals.tempName = 'APP_'+req.query.id+'_temp';
 			res.send(jsonGlobals);
 		}else {
 			var errors = {};
