@@ -1,4 +1,4 @@
-exports = {
+exports.globals = {
 	id: 'globals',
 	_type: 'file',
 	_appID: '',

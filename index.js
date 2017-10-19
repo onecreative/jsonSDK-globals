@@ -1,5 +1,4 @@
 var jsonGlobals = require('./globals');
-
 exports.jsonGlobals = function (req,res) {
 	var origin = req.get('Origin') || '';
 	var referer = req.get('Referer') || '';
@@ -17,7 +16,7 @@ exports.jsonGlobals = function (req,res) {
 		if ([undefined,''].indexOf(req.query.id) === -1) {
 			jsonGlobals._appID = req.query.id;
 			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'');
-			jsonGlobals.builderPath = referer.match(/\/_system\/apps\/.*?\//);
+			jsonGlobals.builderPath = referer.match(/\/_system\/apps\/.*?\//).replace(/http(s??):\/\//,'');
 			if (jsonGlobals.builderPath !== null) jsonGlobals.builderPath = jsonGlobals.builderPath[0];
 			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/',
 			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/',
