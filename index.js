@@ -3,7 +3,7 @@ exports.jsonGlobals = function (req,res) {
 	var origin = req.get('Origin') || '';
 	var referer = req.get('Referer') || '';
 	referer = referer.match(/\/_system\/apps\/.*?\//) || '';
-	if (referer === null) referer = '';
+	if (typeof referer !== 'string') referer = '';
 	builderPath = referer.replace(/http(s??):\/\//,'');
 	//set JSON content type and CORS headers for the response
 	res.header('Content-Type','application/json');
