@@ -1,7 +1,7 @@
 var jsonGlobals = require('./globals');
 
 exports.jsonGlobals = function (req,res) {
-	var origin = (typeof req.get('Origin') === 'undefined') ? '' : req.get('Origin');
+	var origin = req.get('Origin') || '';
 	//set JSON content type and CORS headers for the response
 	res.header('Content-Type','application/json');
 	res.header('Access-Control-Allow-Headers', 'Content-Type');
