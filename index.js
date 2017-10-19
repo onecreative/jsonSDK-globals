@@ -4,6 +4,7 @@ exports.jsonGlobals = function (req,res) {
 	var referer = req.get('Referer') || '';
 	referer = referer.match(/\/_system\/apps\/.*?\//);
 	if (referer === null) referer = '';
+	builderPath = referer.replace(/http(s??):\/\//,'');
 	//set JSON content type and CORS headers for the response
 	res.header('Content-Type','application/json');
 	res.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -18,7 +19,7 @@ exports.jsonGlobals = function (req,res) {
 		if ([undefined,''].indexOf(req.query.appid) === -1) {
 			jsonGlobals._appID = req.query.appid;
 			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'');
-			jsonGlobals.builderPath = referer.replace(/http(s??):\/\//,'');
+			jsonGlobals.builderPath = builderPath;
 			if (jsonGlobals.builderPath !== null) jsonGlobals.builderPath = jsonGlobals.builderPath[0];
 			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/';
 			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.appid+'/';
