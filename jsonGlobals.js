@@ -1,4 +1,4 @@
-exports.jsonGlobals = {
+exports = {
 	id: 'globals',
 	_type: 'file',
 	_appID: '',
