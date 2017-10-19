@@ -1,4 +1,4 @@
-var jsonGlobals = require('./globals');
+var jsonGlobals = require('./jsonGlobals');
 exports.jsonGlobals = function (req,res) {
 	var origin = req.get('Origin') || '';
 	var referer = req.get('Referer') || '';
