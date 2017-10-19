@@ -18,12 +18,12 @@ exports.jsonGlobals = function (req,res) {
 			jsonGlobals.builderPrefix = origin.replace(/-[0-9]*-apps.worldsecuresystems.com/,'');
 			jsonGlobals.builderPath = referer.match(/\/_system\/apps\/.*?\//).replace(/http(s??):\/\//,'');
 			if (jsonGlobals.builderPath !== null) jsonGlobals.builderPath = jsonGlobals.builderPath[0];
-			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/',
-			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/',
-			jsonGlobals.jsonPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/',
-			jsonGlobals.uploadPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/uploads/',
-			jsonGlobals.tempPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/temp/',
-			jsonGlobals.destinationPrefix = 'APP_'+req.query.id+'_',
+			jsonGlobals.utilitiesPath = jsonGlobals.builderPath+'public/utilities/';
+			jsonGlobals.appPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/';
+			jsonGlobals.jsonPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/';
+			jsonGlobals.uploadPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/uploads/';
+			jsonGlobals.tempPath = jsonGlobals.builderPath+'public/apps/'+req.query.id+'/json/temp/';
+			jsonGlobals.destinationPrefix = 'APP_'+req.query.id+'_';
 			jsonGlobals.tempName = 'APP_'+req.query.id+'_temp';
 			res.send(jsonGlobals);
 		}else {
