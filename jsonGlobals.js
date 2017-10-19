@@ -42,6 +42,7 @@ exports = {
 					type: 'iz4t4jwh',
 					tableView: true,
 					required: true,
+					array: false,
 					unique: true
 				},
 				force: {
