@@ -1,4 +1,4 @@
-var jsonGlobals = {
+exports.jsonGlobals = {
 	id: 'globals',
 	_type: 'file',
 	_appID: '',
@@ -4454,5 +4454,3 @@ var jsonGlobals = {
 		}
 	}
 };
-
-exports.jsonGlobals = jsonGlobals;
