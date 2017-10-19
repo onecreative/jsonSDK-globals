@@ -1,4 +1,4 @@
-exports = {
+module.exports = {
 	id: 'globals',
 	_type: 'file',
 	_appID: '',
