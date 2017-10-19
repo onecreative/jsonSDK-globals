@@ -5,7 +5,7 @@ exports.jsonGlobals = function (req,res) {
 	//set JSON content type and CORS headers for the response
 	res.header('Content-Type','application/json');
 	res.header('Access-Control-Allow-Headers', 'Content-Type');
-	res.header('Access-Control-Allow-Origin', origin);
+	res.header('Access-Control-Allow-Origin', '');
 
 	//respond to CORS preflight requests
 	if (req.method === 'OPTIONS') {
