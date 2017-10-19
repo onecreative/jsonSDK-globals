@@ -9,7 +9,7 @@ exports.jsonGlobals = function (req,res) {
 
 	//respond to CORS preflight requests
 	if (req.method === 'OPTIONS') {
-		res.header('Access-Control-Allow-Methods', 'POST');
+		res.header('Access-Control-Allow-Methods', 'GET');
 		res.status(204).send('');
 	}else {
 		//continue on
