@@ -4218,7 +4218,7 @@ exports = {
 								default: '',
 								type: 'select',
 								required: true,
-								attr: '',
+								attr: 'data-bcpie-lists="source:[name=source];"',
 								editable: false,
 								options: []
 							}, {
