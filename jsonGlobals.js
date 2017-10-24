@@ -203,9 +203,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'string',
+				input:'text',
 				inputs: {
 					text: {
-						default:true,
 						attr:'',
 						layout: {},
 						validation: {},
@@ -220,7 +220,6 @@ module.exports = {
 						}
 					},
 					slug: {
-						default:false,
 						attr:'data-bcpie-sameas=\"convert:slug; event:blur;\"',
 						layout: {
 							columns:4
@@ -237,7 +236,6 @@ module.exports = {
 						}
 					},
 					color: {
-						default:false,
 						attr:'class=\"jscolor {hash:true}\"',
 						layout: {
 							columns:1
@@ -251,9 +249,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'number',
+				input:'number',
 				inputs: {
 					number: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:1
@@ -306,7 +304,6 @@ module.exports = {
 						}
 					},
 					range: {
-						default:false,
 						attr:'',
 						layout: {
 							columns:4
@@ -371,9 +368,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'dateTime',
+				default:'widget',
 				inputs: {
 					widget: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:2
@@ -460,9 +457,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'link',
+				input:'url',
 				inputs: {
 					url: {
-						default:true,
 						attr:'',
 						layout: {},
 						validation: {},
@@ -484,7 +481,6 @@ module.exports = {
 						}
 					},
 					email: {
-						default:true,
 						attr:'',
 						layout: {},
 						validation: {},
@@ -506,7 +502,6 @@ module.exports = {
 						}
 					},
 					phone: {
-						default:true,
 						attr:'',
 						layout: {},
 						validation: {},
@@ -550,9 +545,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'boolean',
+				input:'checkbox',
 				inputs: {
 					checkbox: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:2
@@ -561,7 +556,6 @@ module.exports = {
 						options: {}
 					},
 					radio: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:2
@@ -570,7 +564,6 @@ module.exports = {
 						options: {}
 					},
 					select: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:2
@@ -584,9 +577,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'multiline',
+				input:'textarea',
 				inputs: {
 					textarea: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:2
@@ -595,7 +588,6 @@ module.exports = {
 						options: {}
 					},
 					wysiwyg: {
-						default:false,
 						attr:'',
 						layout: {
 							columns:2
@@ -623,9 +615,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'embed',
+				input:'video',
 				inputs: {
 					video: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:3	
@@ -634,7 +626,6 @@ module.exports = {
 						options: {}
 					},
 					audio: {
-						default:true,
 						attr:'',
 						layout: {
 							columns: 3
@@ -643,7 +634,6 @@ module.exports = {
 						options: {}
 					},
 					img: {
-						default:true,
 						attr:'',
 						layout: {
 							columns: 3
@@ -652,7 +642,6 @@ module.exports = {
 						options: {}
 					},
 					document: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:3
@@ -666,9 +655,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'file',
+				input:'file',
 				inputs: {
 					file: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:3
@@ -711,9 +700,9 @@ module.exports = {
 				_parent:'j8vz2s0u',
 				_type:'record',
 				name:'list',
+				input:'select',
 				inputs: {
 					select: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:3
@@ -761,7 +750,6 @@ module.exports = {
 						}
 					},
 					radio: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:3
@@ -804,7 +792,6 @@ module.exports = {
 						}
 					},
 					checkbox: {
-						default:true,
 						attr:'',
 						layout: {
 							columns:3
