@@ -1,6 +1,5 @@
 var reindexAll = require('./reindexAll').reindexAll;
 var jsonGlobals = reindexAll({collection:require('./jsonGlobals')});
-console.log(jsonGlobals);
 exports.jsonGlobals = function (req,res) {
 	var origin = req.get('Origin') || '';
 	//set JSON content type and CORS headers for the response
