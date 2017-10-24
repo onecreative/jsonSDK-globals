@@ -1,4455 +1,858 @@
 module.exports = {
-	id: 'globals',
-	_type: 'file',
-	_appID: '',
-	builderPrefix: '',
-	builderPath: '',
-	utilitiesPath: '',
-	appPath: '',
-	jsonPath: '',
-	uploadPath: '',
-	tempPath: '',
-	destinationPrefix: '',
-	tempName: '',
+	id:'globals',
+	_type:'file',
+	_appID:'',
+	builderPrefix:'',
+	builderPath:'',
+	utilitiesPath:'',
+	appPath:'',
+	jsonPath:'',
+	uploadPath:'',
+	tempPath:'',
+	destinationPrefix:'',
+	tempName:'',
 	files: ['globals', 'schema', 'live', 'dataSources', 'paths', 'references', 'lineage', 'search'],
 	fields: {
-		id: 'j08plcfe',
-		_parent: 'globals',
-		_type: 'folder',
+		id:'j08plcfe',
+		_parent:'globals',
+		_type:'folder',
 		temp: [{
 			id: 1,
-			name: 'parentID',
-			type: 'String'
+			name:'parentID',
+			type:'String'
 		}, {
 			id: 2,
-			name: 'schemaID',
-			type: 'String'
+			name:'schemaID',
+			type:'String'
 		}, {
 			id: 3,
-			name: 'destinationRecordID',
-			type: 'String'
+			name:'destinationRecordID',
+			type:'String'
 		}, {
 			id: 4,
-			name: 'mode',
-			type: 'String'
+			name:'mode',
+			type:'String'
 		}],
 		default: {
 			name: {
 				values: {
-					name: 'name',
-					label: 'Name',
-					destination: 'iyn6q8up',
-					type: 'iz4t4jwh',
-					tableView: true,
-					required: true,
-					array: false,
-					unique: true
+					name:'name',
+					label:'Name',
+					destination:'iyn6q8up',
+					type:'iz4t4jwh',
+					tableView:true,
+					required:true,
+					array:false,
+					unique:true
 				},
-				force: {
-					required: true,
-					array: false,
-					tableView: true
+				force:{
+					required:true,
+					array:false,
+					tableView:true
 				},
-				removable: false
+				removable:false
 			}
 		},
-		destinations: {
-			id: 'j8vz2s00',
-			_parent: 'globals',
-			_type: 'table',
+		dataStorage: {
+			id:'j8vz2s00',
+			_parent:'globals',
+			_type:'table',
 			items: [{
-				id: 'iyn6q8up',
-				_parent: 'j8vz2s00',
-				_type: 'record',
-				name: 'JSON',
-				types: {
-					id: 'j8w0emzj',
-					_parent: 'iyn6q8up',
-					_type: 'table',
-					items: [{
-						id: 'iz4t4jwh',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'iz4t4jwh',
-						force: {}
-					}, {
-						id: 'iz4t4k7c',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'iz4t4k7c',
-						force: {}
-					}, {
-						id: 'j0pgun4u',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'j0pgun4u',
-						force: {}
-					}, {
-						id: 'iz4t4kgo',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'iz4t4kgo',
-						force: {}
-					}, {
-						id: 'j0petsgq',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'j0petsgq',
-						force: {
-							array: false
-						}
-					}, {
-						id: 'j0peu8bh',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'j0peu8bh',
-						force: {
-							array: false
-						}
-					}, {
-						id: 'j0ny6krv',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'j0ny6krv',
-						force: {
-							array: false
-						}
-					}, {
-						id: 'j0nyx43v',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'j0nyx43v',
-						force: {
-							array: false
-						}
-					}, {
-						id: 'j0nyx5cu',
-						_parent: 'j8w0emzj',
-						_type: 'record',
-						map: 'j0nyx5cu',
-						force: {
-							array: false
-						}
-					}]
-				},
-				force: {},
-				names: {
-					id: 'j8w07m1k',
-					_parent: 'j8vz2s00',
-					_type: 'table',
-					items: [{
-						id: 'j8w0avt5',
-						_parent: 'j8w07m1k',
-						_type: 'record',
-						name: 'name',
-						type: 'iz4t4jwh',
-						required: true
-					}]
-				},
-				editable: true
+				id:'iyn6q8up',
+				_parent:'j8vz2s00',
+				_type:'record',
+				name:'JSON',
+				field: {
+					types: {
+						iz4t4jwh: {map:'iz4t4jwh', force:{}},
+						iz4t4k7c: {map:'iz4t4k7c', force:{}},
+						iz4t4kgo: {map:'iz4t4kgo', force:{}},
+						j0peu96z: {map:'j0peu96z', force:{array:false}},
+						iz4t4kq4: {map:'iz4t4kq4', force:{array:false}},
+						iz4t4l0a: {map:'iz4t4l0a', force:{array:false}},
+						j81qhog7: {map:'j81qhog7', force:{array:false}},
+						iz4t4lb8: {map:'iz4t4lb8', force:{array:false}},
+						j95t2x40: {map:'j95t2x40', force:{}}
+					},
+					presets: {},
+					allowCustom:true
+				}
 			}, {
-				id: 'iz4sxid1',
-				_parent: 'j8vz2s00',
-				_type: 'record',
-				name: 'Web App',
-				types: {
-					id: 'j8w1oeew',
-					_parent: 'iz4sxid1',
-					_type: 'table',
-					items: [{
-						id: 'iz4t4jwh',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'iz4t4k7c',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'Number',
-						force: {}
-					}, {
-						id: 'j0pgun4u',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'iz4t4kgo',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0petsgq',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0peu8bh',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0ny6krv',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0nyx43v',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0nyx5cu',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0peu96z',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'j0pewdix',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'iz4t4kq4',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'Boolean',
-						force: {}
-					}, {
-						id: 'iz4t4l0a',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String_MultiLine',
-						force: {}
-					}, {
-						id: 'j0n5cv9e',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String_MultiLine',
-						force: {}
-					}, {
-						id: 'iz4t4lb8',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'Image',
-						force: {}
-					}, {
-						id: 'iz4t4lmx',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String_MultiLine',
-						force: {}
-					}, {
-						id: 'iz4t4mbt',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}, {
-						id: 'iz4t79zs',
-						_parent: 'j8w1oeew',
-						_type: 'record',
-						map: 'String',
-						force: {}
-					}]
-				},
-				force: {
-					array: false
-				},
-				names: {
-					id: 'j8w1wgbh',
-					_parent: 'j8vz2s00',
-					_type: 'table',
-					items: [{
-						id: 'j8w20zdw',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'name',
-						type: 'iz4t4jwh',
-						required: true
-					}, {
-						id: 'j8w22e5o',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'weight',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22six',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'releaseDate',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22t77',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'expiryDate',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22tgo',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'createDate',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22tqu',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'lastUpdateDate',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22tyx',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'enabled',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22u9b',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'slug',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22urq',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'description',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22v29',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'roleId',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22vas',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'createdBy',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22vi1',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'submittedBy',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22vpa',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'address',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22vwi',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'city',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w22w37',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'state',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w25s20',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'zipCode',
-						type: '',
-						required: false
-					}, {
-						id: 'j8w25sgu',
-						_parent: 'j8w1wgbh',
-						_type: 'record',
-						name: 'country',
-						type: '',
-						required: false
-					}]
-				},
-				editable: true
+				id:'iz4sxid1',
+				_parent:'j8vz2s00',
+				_type:'record',
+				name:'Web App',
+				field: {
+					types: {
+						iz4t4jwh: {map:'String', force:{array:false}},
+						iz4t4k7c: {map:'Number', force:{array:false}},
+						iz4t4kgo: {map:'String', force:{array:false}},
+						j0peu96z: {map:'String', force:{array:false}},
+						iz4t4kq4: {map:'Boolean', force:{array:false}},
+						iz4t4l0a: {map:'String_MultiLine', force:{array:false}},
+						j81qhog7: {map:'String_MultiLine', force:{array:false}},
+						iz4t4lb8: {map:'Image', force:{array:false}},
+						j95t2x40: {map:'String', force:{array:false}}
+					},
+					presets: {
+						weight: {type:'iz4t4k7c', required:false},
+						releaseDate: {type:'iz4t4kgo', required:false},
+						expiryDate: {type:'iz4t4kgo', required:false},
+						createDate: {type:'iz4t4kgo', required:false},
+						lastUpdateDate: {type:'iz4t4kgo', required:false},
+						enabled: {type:'iz4t4kq4', required:false},
+						slug: {type:'iz4t4jwh', required:false},
+						description: {type:'iz4t4l0a', required:false},
+						roleId: {type:'iz4t4k7c', required:false},
+						createdBy: {type:'iz4t4k7c', required:false},
+						submittedBy: {type:'iz4t4k7c', required:false},
+						address: {type:'iz4t4jwh', required:false},
+						city: {type:'iz4t4jwh', required:false},
+						state: {type:'iz4t4jwh', required:false},
+						zipCode: {type:'iz4t4jwh', required:false},
+						country: {type:'iz4t4jwh', required:false}
+					},
+					allowCustom:true
+				}
 			}]
 		},
+		layout: {
+			label: {
+				label:'Label',
+				default:'',
+				input:'text',
+				required:true,
+				attr:'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
+			},
+			tooltip: {
+				label:'Tooltip',
+				default:'',
+				input:'text',
+				required:false,
+				attr:''
+			},
+			columns: {
+				label:'Columns',
+				default: 6,
+				input:'select',
+				required:true,
+				attr:'',
+				editable:false,
+				options: [
+					{text:'shrink', value:'shrink'}, 
+					{text:'expand', value:'auto'}, 
+					{text:'1', value: 1}, 
+					{text:'1', value: 1}, 
+					{text:'2', value: 2}, 
+					{text:'3', value: 3}, 
+					{text:'4', value: 4}, 
+					{text:'5', value: 5}, 
+					{text:'6', value: 6}, 
+					{text:'7', value: 7}, 
+					{text:'8', value: 8}, 
+					{text:'9', value: 9}, 
+					{text:'10', value: 10}, 
+					{text:'11', value: 11}, 
+					{text:'12', value: 12}
+				]
+			},
+			tableView: {
+				label:'table view',
+				default:false,
+				input:'boolean',
+				required:false,
+				attr:''
+			}, 
+			detailView: {
+				label:'detail view',
+				default:true,
+				input:'boolean',
+				required:false,
+				attr:''
+			}, 
+			readonly: {
+				label:'readonly',
+				default:false,
+				input:'boolean',
+				required:false,
+				attr:''
+			}
+		},
+		validation: {
+			required: {
+				label:'required',
+				default:false,
+				input:'boolean',
+				required:false,
+				attr:''
+			}, 
+			unique: {
+				label:'unique',
+				default:false,
+				input:'boolean',
+				required:false,
+				attr:''
+			}
+		},
 		types: {
-			id: 'j8vz2s0u',
-			_parent: 'globals',
-			_type: 'table',
+			id:'j8vz2s0u',
+			_parent:'globals',
+			_type:'table',
 			items: [{
-				id: 'iz4t4jwh',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'string',
+				id:'iz4t4jwh',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'string',
 				inputs: {
-					id: 'j8vz2s0v',
-					_parent: 'iz4t4jwh',
-					_type: 'table',
-					items: [{
-						id: 'j8w410iu',
-						_parent: 'j8vz2s0v',
-						_type: 'record',
-						name: 'text',
-						default: true,
-						attr: '',
-						layout: {
-							id: 'j8vz2s0w',
-							_parent: 'j8w410iu',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz40',
-								_parent: 'j8vz2s0w',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz41',
-								_parent: 'j8vz2s0w',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz42',
-								_parent: 'j8vz2s0w',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 6,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz43',
-								_parent: 'j8vz2s0w',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz44',
-								_parent: 'j8vz2s0w',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz45',
-								_parent: 'j8vz2s0w',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						validation: {
-							id: 'j8vz2s0x',
-							_parent: 'j8w410iu',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz46',
-								_parent: 'j8vz2s0x',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz47',
-								_parent: 'j8vz2s0x',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+					text: {
+						default:true,
+						attr:'',
+						layout: {},
+						validation: {},
 						options: {
-							id: 'j8vz2s0y',
-							_parent: 'j8w410iu',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz48',
-								_parent: 'j8vz2s0y',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}, {
-						id: 'j8w43u34',
-						_parent: 'j8vz2s0v',
-						_type: 'record',
-						name: 'slug',
-						default: false,
-						attr: 'data-bcpie-sameas=\"convert:slug; event:blur;\"',
+					},
+					slug: {
+						default:false,
+						attr:'data-bcpie-sameas=\"convert:slug; event:blur;\"',
 						layout: {
-							id: 'j8vz2s0z',
-							_parent: 'j8w43u34',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz49',
-								_parent: 'j8vz2s0z',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz4a',
-								_parent: 'j8vz2s0z',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4b',
-								_parent: 'j8vz2s0z',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 4,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz4c',
-								_parent: 'j8vz2s0z',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4d',
-								_parent: 'j8vz2s0z',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4e',
-								_parent: 'j8vz2s0z',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:4
 						},
-						validation: {
-							id: 'j8vz2s10',
-							_parent: 'j8w43u34',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4f',
-								_parent: 'j8vz2s10',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4g',
-								_parent: 'j8vz2s10',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s11',
-							_parent: 'j8w43u34',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4h',
-								_parent: 'j8vz2s11',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}, {
-						id: 'j8w43ue4',
-						_parent: 'j8vz2s0v',
-						_type: 'record',
-						name: 'color',
-						default: false,
-						attr: 'class=\"jscolor {hash:true}\"',
+					},
+					color: {
+						default:false,
+						attr:'class=\"jscolor {hash:true}\"',
 						layout: {
-							id: 'j8vz2s12',
-							_parent: 'j8w43ue4',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4i',
-								_parent: 'j8vz2s12',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz4j',
-								_parent: 'j8vz2s12',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4k',
-								_parent: 'j8vz2s12',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 1,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz4l',
-								_parent: 'j8vz2s12',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4m',
-								_parent: 'j8vz2s12',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4n',
-								_parent: 'j8vz2s12',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:1
 						},
-						validation: {
-							id: 'j8vz2s13',
-							_parent: 'j8w43ue4',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4o',
-								_parent: 'j8vz2s13',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4p',
-								_parent: 'j8vz2s13',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s14',
-							_parent: 'j8w43ue4',
-							_type: 'table',
-							items: []
-						}
-					}]
+						validation: {},
+						options: {}
+					}
 				}
 			}, {
-				id: 'iz4t4k7c',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'number',
+				id:'iz4t4k7c',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'number',
 				inputs: {
-					id: 'j8vz2s15',
-					_parent: 'iz4t4k7c',
-					_type: 'table',
-					items: [{
-						id: 'j8w4q0kp',
-						_parent: 'j8vz2s15',
-						_type: 'record',
-						name: 'number',
-						default: true,
-						attr: '',
+					number: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s16',
-							_parent: 'j8w4q0kp',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4q',
-								_parent: 'j8vz2s16',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz4r',
-								_parent: 'j8vz2s16',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4s',
-								_parent: 'j8vz2s16',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz4t',
-								_parent: 'j8vz2s16',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4u',
-								_parent: 'j8vz2s16',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4v',
-								_parent: 'j8vz2s16',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:1
 						},
-						validation: {
-							id: 'j8vz2s17',
-							_parent: 'j8w4q0kp',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4w',
-								_parent: 'j8vz2s17',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4x',
-								_parent: 'j8vz2s17',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s18',
-							_parent: 'j8w4q0kp',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz4y',
-								_parent: 'j8vz2s18',
-								_type: 'record',
-								name: 'decimals',
-								label: 'Decimals',
+							decimals: {
+								label:'Decimals',
 								default: 0,
-								type: 'number',
+								input:'number',
 								min: 0,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz4z',
-								_parent: 'j8vz2s18',
-								_type: 'record',
-								name: 'min',
-								label: 'Min',
+								required:false,
+								attr:''
+							},
+							min: {
+								label:'Min',
 								default: null,
-								type: 'number',
+								input:'number',
 								min: null,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz50',
-								_parent: 'j8vz2s18',
-								_type: 'record',
-								name: 'max',
-								label: 'Max',
+								required:false,
+								attr:''
+							},
+							max: {
+								label:'Max',
 								default: null,
-								type: 'number',
+								input:'number',
 								min: null,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz51',
-								_parent: 'j8vz2s18',
-								_type: 'record',
-								name: 'step',
-								label: 'step',
+								required:false,
+								attr:''
+							},
+							step: {
+								label:'step',
 								default: null,
-								type: 'number',
+								input:'number',
 								min: null,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz52',
-								_parent: 'j8vz2s18',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+								required:false,
+								attr:''
+							},
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}, {
-						id: 'j8w4q0vx',
-						_parent: 'j8vz2s15',
-						_type: 'record',
-						name: 'range',
-						default: false,
-						attr: '',
+					},
+					range: {
+						default:false,
+						attr:'',
 						layout: {
-							id: 'j8vz2s19',
-							_parent: 'j8w4q0vx',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz53',
-								_parent: 'j8vz2s19',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz54',
-								_parent: 'j8vz2s19',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz55',
-								_parent: 'j8vz2s19',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 4,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz56',
-								_parent: 'j8vz2s19',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz57',
-								_parent: 'j8vz2s19',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz58',
-								_parent: 'j8vz2s19',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:4
 						},
-						validation: {
-							id: 'j8vz2s1a',
-							_parent: 'j8w4q0vx',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz59',
-								_parent: 'j8vz2s1a',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5a',
-								_parent: 'j8vz2s1a',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s1b',
-							_parent: 'j8w4q0vx',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz5b',
-								_parent: 'j8vz2s1b',
-								_type: 'record',
-								name: 'decimals',
-								label: 'Decimals',
+							decimals: {
+								label:'Decimals',
 								default: 0,
-								type: 'number',
+								input:'number',
 								min: 0,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5c',
-								_parent: 'j8vz2s1b',
-								_type: 'record',
-								name: 'min',
-								label: 'Min',
+								required:false,
+								attr:''
+							},
+							min: {
+								label:'Min',
 								default: null,
-								type: 'number',
+								input:'number',
 								min: null,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5d',
-								_parent: 'j8vz2s1b',
-								_type: 'record',
-								name: 'max',
-								label: 'Max',
+								required:false,
+								attr:''
+							},
+							max: {
+								label:'Max',
 								default: null,
-								type: 'number',
+								input:'number',
 								min: null,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5e',
-								_parent: 'j8vz2s1b',
-								_type: 'record',
-								name: 'step',
-								label: 'step',
+								required:false,
+								attr:''
+							},
+							step: {
+								label:'step',
 								default: null,
-								type: 'number',
+								input:'number',
 								min: null,
 								max: null,
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5f',
-								_parent: 'j8vz2s1b',
-								_type: 'record',
-								name: 'ticks',
-								label: 'tick marks',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5g',
-								_parent: 'j8vz2s1b',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+								required:false,
+								attr:''
+							},
+							ticks: {
+								label:'tick marks',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}]
+					}
 				}
 			}, {
-				id: 'iz4t4kgo',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'dateTime',
+				id:'iz4t4kgo',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'dateTime',
 				inputs: {
-					id: 'j8vz2s1c',
-					_parent: 'iz4t4kgo',
-					_type: 'table',
-					items: [{
-						id: 'j8w4r0ot',
-						_parent: 'j8vz2s1c',
-						_type: 'record',
-						name: 'widget',
-						default: true,
-						attr: '',
+					widget: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s1d',
-							_parent: 'j8w4r0ot',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz5h',
-								_parent: 'j8vz2s1d',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz5i',
-								_parent: 'j8vz2s1d',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5j',
-								_parent: 'j8vz2s1d',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz5k',
-								_parent: 'j8vz2s1d',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5l',
-								_parent: 'j8vz2s1d',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5m',
-								_parent: 'j8vz2s1d',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:2
 						},
-						validation: {
-							id: 'j8vz2s1e',
-							_parent: 'j8w4r0ot',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz5n',
-								_parent: 'j8vz2s1e',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5o',
-								_parent: 'j8vz2s1e',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s1f',
-							_parent: 'j8w4r0ot',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz5p',
-								_parent: 'j8vz2s1f',
-								_type: 'record',
-								name: 'format',
-								label: 'Format',
-								default: 'utc',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: true,
-								options: [{
-									text: 'utc',
-									value: 'utc'
-								}, {
-									text: 'calendar',
-									value: 'calendar'
-								}, {
-									text: 'YYYY',
-									value: 'YYYY (ie., 2017)'
-								}, {
-									text: 'MM-DD-YYYY',
-									value: 'MM-DD-YYYY (ie., 10-21-2017)'
-								}, {
-									text: 'DD-MM-YYYY',
-									value: 'DD-MM-YYYY (ie., 21-10-2017)'
-								}, {
-									text: 'MMM DD, YYYY',
-									value: 'MMM DD, YYYY (ie., Oct 21, 2017)'
-								}, {
-									text: 'MMMM Do',
-									value: 'MMMM Do (ie., October 21st)'
-								}, {
-									text: 'hh:mm a',
-									value: 'hh:mm a (ie., 10:30 p.m.)'
-								}, {
-									text: 'HH:mm a',
-									value: 'hh:mm a (ie., 22:30 p.m.)'
-								}, {
-									text: 'HH:mm',
-									value: 'hh:mm a (ie., 22:30)'
-								}, {
-									text: 'HH:mm z',
-									value: 'hh:mm z (ie., 22:30 EST)'
-								}, {
-									text: 'MMM Do @ hh:mm a z',
-									value: 'hh:mm a (ie., Oct. 21st @ 10:30 p.m. EST)'
-								}]
-							}, {
-								id: 'j8w6oz5q',
-								_parent: 'j8vz2s1f',
-								_type: 'record',
-								name: 'displayFormat',
-								label: 'Display Format',
-								default: 'MM-DD-YYYY',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: true,
-								options: [{
-									text: 'utc',
-									value: 'utc'
-								}, {
-									text: 'calendar',
-									value: 'calendar'
-								}, {
-									text: 'YYYY',
-									value: 'YYYY (ie., 2017)'
-								}, {
-									text: 'MM-DD-YYYY',
-									value: 'MM-DD-YYYY (ie., 10-21-2017)'
-								}, {
-									text: 'DD-MM-YYYY',
-									value: 'DD-MM-YYYY (ie., 21-10-2017)'
-								}, {
-									text: 'MMM DD, YYYY',
-									value: 'MMM DD, YYYY (ie., Oct 21, 2017)'
-								}, {
-									text: 'MMMM Do',
-									value: 'MMMM Do (ie., October 21st)'
-								}, {
-									text: 'hh:mm a',
-									value: 'hh:mm a (ie., 10:30 p.m.)'
-								}, {
-									text: 'HH:mm a',
-									value: 'hh:mm a (ie., 22:30 p.m.)'
-								}, {
-									text: 'HH:mm',
-									value: 'hh:mm a (ie., 22:30)'
-								}, {
-									text: 'HH:mm z',
-									value: 'hh:mm z (ie., 22:30 EST)'
-								}, {
-									text: 'MMM Do @ hh:mm a z',
-									value: 'hh:mm a (ie., Oct. 21st @ 10:30 p.m. EST)'
-								}]
-							}, {
-								id: 'j8w6oz5r',
-								_parent: 'j8vz2s1f',
-								_type: 'record',
-								name: 'enable',
-								label: 'Enable',
+							format: {
+								label:'Format',
+								default:'utc',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:true,
+								options: [
+									{text:'utc', value:'utc'}, 
+									{text:'calendar', value:'calendar'}, 
+									{text:'YYYY', value:'YYYY (ie., 2017)'}, 
+									{text:'MM-DD-YYYY', value:'MM-DD-YYYY (ie., 10-21-2017)'}, 
+									{text:'DD-MM-YYYY', value:'DD-MM-YYYY (ie., 21-10-2017)'}, 
+									{text:'MMM DD, YYYY', value:'MMM DD, YYYY (ie., Oct 21, 2017)'}, 
+									{text:'MMMM Do', value:'MMMM Do (ie., October 21st)'}, 
+									{text:'hh:mm a', value:'hh:mm a (ie., 10:30 p.m.)'}, 
+									{text:'HH:mm a', value:'hh:mm a (ie., 22:30 p.m.)'}, 
+									{text:'HH:mm', value:'hh:mm a (ie., 22:30)'}, 
+									{text:'HH:mm z', value:'hh:mm z (ie., 22:30 EST)'}, 
+									{text:'MMM Do @ hh:mm a z', value:'hh:mm a (ie., Oct. 21st @ 10:30 p.m. EST)'}
+								]
+							},
+							displayFormat: {
+								label:'Display Format',
+								default:'MM-DD-YYYY',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:true,
+								options: [
+									{text:'utc', value:'utc'}, 
+									{text:'calendar', value:'calendar'}, 
+									{text:'YYYY', value:'YYYY (ie., 2017)'}, 
+									{text:'MM-DD-YYYY', value:'MM-DD-YYYY (ie., 10-21-2017)'}, 
+									{text:'DD-MM-YYYY', value:'DD-MM-YYYY (ie., 21-10-2017)'}, 
+									{text:'MMM DD, YYYY', value:'MMM DD, YYYY (ie., Oct 21, 2017)'}, 
+									{text:'MMMM Do', value:'MMMM Do (ie., October 21st)'}, 
+									{text:'hh:mm a', value:'hh:mm a (ie., 10:30 p.m.)'}, 
+									{text:'HH:mm a', value:'hh:mm a (ie., 22:30 p.m.)'}, 
+									{text:'HH:mm', value:'hh:mm a (ie., 22:30)'}, 
+									{text:'HH:mm z', value:'hh:mm z (ie., 22:30 EST)'}, 
+									{text:'MMM Do @ hh:mm a z', value:'hh:mm a (ie., Oct. 21st @ 10:30 p.m. EST)'}
+								]
+							},
+							enable: {
+								label:'Enable',
 								default: null,
-								type: 'string',
-								required: false,
-								attr: 'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:multiple; widget:modal;\"'
-							}, {
-								id: 'j8w6oz5s',
-								_parent: 'j8vz2s1f',
-								_type: 'record',
-								name: 'disable',
-								label: 'Disable',
+								input:'string',
+								required:false,
+								attr:'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:multiple; widget:modal;\"'
+							},
+							disable: {
+								label:'Disable',
 								default: null,
-								type: 'string',
-								required: false,
-								attr: 'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:multiple; widget:modal;\"'
-							}, {
-								id: 'j8w6oz5t',
-								_parent: 'j8vz2s1f',
-								_type: 'record',
-								name: 'min',
-								label: 'Min',
+								input:'string',
+								required:false,
+								attr:'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:multiple; widget:modal;\"'
+							},
+							min: {
+								label:'Min',
 								default: null,
-								type: 'string',
-								required: false,
-								attr: 'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:single; widget:modal;\"'
-							}, {
-								id: 'j8w6oz5u',
-								_parent: 'j8vz2s1f',
-								_type: 'record',
-								name: 'max',
-								label: 'Max',
+								input:'string',
+								required:false,
+								attr:'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:single; widget:modal;\"'
+							},
+							max: {
+								label:'Max',
 								default: null,
-								type: 'string',
-								required: false,
-								attr: 'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:single; widget:modal;\"'
-							}]
+								input:'string',
+								required:false,
+								attr:'data-bcpie-date=\"format:utc; displayFormat:MMM DD, YYYY @ HH:mm z; mode:single; widget:modal;\"'
+							}
 						}
-					}]
+					}
 				}
 			}, {
-				id: 'j0peu96z',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'link',
+				id:'j0peu96z',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'link',
 				inputs: {
-					id: 'j8vz2s1g',
-					_parent: 'j0peu96z',
-					_type: 'table',
-					items: [{
-						id: 'j8w4skps',
-						_parent: 'j8vz2s1g',
-						_type: 'record',
-						name: 'url',
-						default: true,
-						attr: '',
-						layout: {
-							id: 'j8vz2s1h',
-							_parent: 'j8w4skps',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz5v',
-								_parent: 'j8vz2s1h',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz5w',
-								_parent: 'j8vz2s1h',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5x',
-								_parent: 'j8vz2s1h',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 6,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz5y',
-								_parent: 'j8vz2s1h',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz5z',
-								_parent: 'j8vz2s1h',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz60',
-								_parent: 'j8vz2s1h',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						validation: {
-							id: 'j8vz2s1i',
-							_parent: 'j8w4skps',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz61',
-								_parent: 'j8vz2s1i',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz62',
-								_parent: 'j8vz2s1i',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+					url: {
+						default:true,
+						attr:'',
+						layout: {},
+						validation: {},
 						options: {
-							id: 'j8vz2s1j',
-							_parent: 'j8w4skps',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz63',
-								_parent: 'j8vz2s1j',
-								_type: 'record',
-								name: 'clickable',
-								label: 'clickable',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz64',
-								_parent: 'j8vz2s1j',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							clickable: {
+								label:'clickable',
+								default:true,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}, {
-						id: 'j8w4skyh',
-						_parent: 'j8vz2s1g',
-						_type: 'record',
-						name: 'email',
-						default: true,
-						attr: '',
-						layout: {
-							id: 'j8vz2s1k',
-							_parent: 'j8w4skyh',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz65',
-								_parent: 'j8vz2s1k',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz66',
-								_parent: 'j8vz2s1k',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz67',
-								_parent: 'j8vz2s1k',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 6,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz68',
-								_parent: 'j8vz2s1k',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz69',
-								_parent: 'j8vz2s1k',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6a',
-								_parent: 'j8vz2s1k',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						validation: {
-							id: 'j8vz2s1l',
-							_parent: 'j8w4skyh',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6b',
-								_parent: 'j8vz2s1l',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6c',
-								_parent: 'j8vz2s1l',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+					},
+					email: {
+						default:true,
+						attr:'',
+						layout: {},
+						validation: {},
 						options: {
-							id: 'j8vz2s1m',
-							_parent: 'j8w4skyh',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6d',
-								_parent: 'j8vz2s1m',
-								_type: 'record',
-								name: 'clickable',
-								label: 'clickable',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6e',
-								_parent: 'j8vz2s1m',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							clickable: {
+								label:'clickable',
+								default:true,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}, {
-						id: 'j8w4sl7l',
-						_parent: 'j8vz2s1g',
-						_type: 'record',
-						name: 'phone',
-						default: true,
-						attr: '',
-						layout: {
-							id: 'j8vz2s1n',
-							_parent: 'j8w4sl7l',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6f',
-								_parent: 'j8vz2s1n',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz6g',
-								_parent: 'j8vz2s1n',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6h',
-								_parent: 'j8vz2s1n',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 6,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz6i',
-								_parent: 'j8vz2s1n',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6j',
-								_parent: 'j8vz2s1n',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6k',
-								_parent: 'j8vz2s1n',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						validation: {
-							id: 'j8vz2s1o',
-							_parent: 'j8w4sl7l',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6l',
-								_parent: 'j8vz2s1o',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6m',
-								_parent: 'j8vz2s1o',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+					},
+					phone: {
+						default:true,
+						attr:'',
+						layout: {},
+						validation: {},
 						options: {
-							id: 'j8vz2s1p',
-							_parent: 'j8w4sl7l',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6n',
-								_parent: 'j8vz2s1p',
-								_type: 'record',
-								name: 'format',
-								label: 'Format',
-								default: '(xxx) xxx-xxxx',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: true,
-								options: [{
-									text: '(xxx) xxx-xxxx',
-									value: '(xxx) xxx-xxxx'
-								}, {
-									text: 'x (xxx) xxx-xxxx',
-									value: 'x (xxx) xxx-xxxx'
-								}, {
-									text: '+x (xxx) xxx-xxxx',
-									value: '+x (xxx) xxx-xxxx'
-								}, {
-									text: 'xxx-xxx-xxxx',
-									value: 'xxx-xxx-xxxx'
-								}, {
-									text: 'x xxx-xxx-xxxx',
-									value: 'x xxx-xxx-xxxx'
-								}, {
-									text: '(x) xxx-xxx-xxxx',
-									value: '(x) xxx-xxx-xxxx'
-								}, {
-									text: '+x xxx-xxx-xxxx',
-									value: '+x xxx-xxx-xxxx'
-								}]
-							}, {
-								id: 'j8w6oz6o',
-								_parent: 'j8vz2s1p',
-								_type: 'record',
-								name: 'clickable',
-								label: 'clickable',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6p',
-								_parent: 'j8vz2s1p',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							format: {
+								label:'Format',
+								default:'(xxx) xxx-xxxx',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:true,
+								options: [
+									{text:'(xxx) xxx-xxxx', value:'(xxx) xxx-xxxx'}, 
+									{text:'x (xxx) xxx-xxxx', value:'x (xxx) xxx-xxxx'}, 
+									{text:'+x (xxx) xxx-xxxx', value:'+x (xxx) xxx-xxxx'}, 
+									{text:'xxx-xxx-xxxx', value:'xxx-xxx-xxxx'}, 
+									{text:'x xxx-xxx-xxxx', value:'x xxx-xxx-xxxx'}, 
+									{text:'(x) xxx-xxx-xxxx', value:'(x) xxx-xxx-xxxx'}, 
+									{text:'+x xxx-xxx-xxxx', value:'+x xxx-xxx-xxxx'}
+								]
+							},
+							clickable: {
+								label:'clickable',
+								default:true,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}]
+					}
 				}
 			}, {
-				id: 'iz4t4kq4',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'boolean',
+				id:'iz4t4kq4',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'boolean',
 				inputs: {
-					id: 'j8vz2s1q',
-					_parent: 'iz4t4kq4',
-					_type: 'table',
-					items: [{
-						id: 'j8w4tz67',
-						_parent: 'j8vz2s1q',
-						_type: 'record',
-						name: 'checkbox',
-						default: true,
-						attr: '',
+					checkbox: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s1r',
-							_parent: 'j8w4tz67',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6q',
-								_parent: 'j8vz2s1r',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz6r',
-								_parent: 'j8vz2s1r',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6s',
-								_parent: 'j8vz2s1r',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz6t',
-								_parent: 'j8vz2s1r',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6u',
-								_parent: 'j8vz2s1r',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6v',
-								_parent: 'j8vz2s1r',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:2
 						},
-						validation: {
-							id: 'j8vz2s1s',
-							_parent: 'j8w4tz67',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6w',
-								_parent: 'j8vz2s1s',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz6x',
-								_parent: 'j8vz2s1s',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s1t',
-							_parent: 'j8w4tz67',
-							_type: 'table',
-							items: []
-						}
-					}, {
-						id: 'j8w4tzf0',
-						_parent: 'j8vz2s1q',
-						_type: 'record',
-						name: 'radio',
-						default: true,
-						attr: '',
+						validation: {},
+						options: {}
+					},
+					radio: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s1u',
-							_parent: 'j8w4tzf0',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz6y',
-								_parent: 'j8vz2s1u',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz6z',
-								_parent: 'j8vz2s1u',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz70',
-								_parent: 'j8vz2s1u',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz71',
-								_parent: 'j8vz2s1u',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz72',
-								_parent: 'j8vz2s1u',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz73',
-								_parent: 'j8vz2s1u',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:2
 						},
-						validation: {
-							id: 'j8vz2s1v',
-							_parent: 'j8w4tzf0',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz74',
-								_parent: 'j8vz2s1v',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz75',
-								_parent: 'j8vz2s1v',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s1w',
-							_parent: 'j8w4tzf0',
-							_type: 'table',
-							items: []
-						}
-					}, {
-						id: 'j8w4uhch',
-						_parent: 'j8vz2s1q',
-						_type: 'record',
-						name: 'select',
-						default: true,
-						attr: '',
+						validation: {},
+						options: {}
+					},
+					select: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s1x',
-							_parent: 'j8w4uhch',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz76',
-								_parent: 'j8vz2s1x',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz77',
-								_parent: 'j8vz2s1x',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz78',
-								_parent: 'j8vz2s1x',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz79',
-								_parent: 'j8vz2s1x',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7a',
-								_parent: 'j8vz2s1x',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7b',
-								_parent: 'j8vz2s1x',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:2
 						},
-						validation: {
-							id: 'j8vz2s1y',
-							_parent: 'j8w4uhch',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7c',
-								_parent: 'j8vz2s1y',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7d',
-								_parent: 'j8vz2s1y',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s1z',
-							_parent: 'j8w4uhch',
-							_type: 'table',
-							items: []
-						}
-					}]
+						validation: {},
+						options: {}
+					}
 				}
 			}, {
-				id: 'iz4t4l0a',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'multiline',
+				id:'iz4t4l0a',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'multiline',
 				inputs: {
-					id: 'j8vz2s20',
-					_parent: 'iz4t4l0a',
-					_type: 'table',
-					items: [{
-						id: 'j8w4wchp',
-						_parent: 'j8vz2s20',
-						_type: 'record',
-						name: 'textarea',
-						default: true,
-						attr: '',
+					textarea: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s21',
-							_parent: 'j8w4wchp',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7e',
-								_parent: 'j8vz2s21',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz7f',
-								_parent: 'j8vz2s21',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7g',
-								_parent: 'j8vz2s21',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz7h',
-								_parent: 'j8vz2s21',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7i',
-								_parent: 'j8vz2s21',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7j',
-								_parent: 'j8vz2s21',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:2
 						},
-						validation: {
-							id: 'j8vz2s22',
-							_parent: 'j8w4wchp',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7k',
-								_parent: 'j8vz2s22',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7l',
-								_parent: 'j8vz2s22',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s23',
-							_parent: 'j8w4wchp',
-							_type: 'table',
-							items: []
-						}
-					}, {
-						id: 'j8w4wcsr',
-						_parent: 'j8vz2s20',
-						_type: 'record',
-						name: 'wysiwyg',
-						default: false,
-						attr: '',
+						validation: {},
+						options: {}
+					},
+					wysiwyg: {
+						default:false,
+						attr:'',
 						layout: {
-							id: 'j8vz2s24',
-							_parent: 'j8w4wcsr',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7m',
-								_parent: 'j8vz2s24',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz7n',
-								_parent: 'j8vz2s24',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7o',
-								_parent: 'j8vz2s24',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 2,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz7p',
-								_parent: 'j8vz2s24',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7q',
-								_parent: 'j8vz2s24',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7r',
-								_parent: 'j8vz2s24',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:2
 						},
-						validation: {
-							id: 'j8vz2s25',
-							_parent: 'j8w4wcsr',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7s',
-								_parent: 'j8vz2s25',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7t',
-								_parent: 'j8vz2s25',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s26',
-							_parent: 'j8w4wcsr',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7u',
-								_parent: 'j8vz2s26',
-								_type: 'record',
-								name: 'buttons',
-								label: 'Buttons',
-								default: 'basic',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'basic',
-									value: 'basic'
-								}, {
-									text: 'normal',
-									value: 'normal'
-								}, {
-									text: 'full',
-									value: 'full'
-								}]
-							}]
+							buttons: {
+								label:'Buttons',
+								default:'basic',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:false,
+								options: [
+									{text:'basic', value:'basic'}, 
+									{text:'normal', value:'normal'}, 
+									{text:'full', value:'full'}
+								]
+							}
 						}
-					}]
+					}
 				}
 			}, {
-				id: 'j81qhog7',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'embed',
+				id:'j81qhog7',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'embed',
 				inputs: {
-					id: 'j8vz2s27',
-					_parent: 'j81qhog7',
-					_type: 'table',
-					items: [{
-						id: 'j8w4z22m',
-						_parent: 'j8vz2s27',
-						_type: 'record',
-						name: 'video',
-						default: true,
-						attr: '',
+					video: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s28',
-							_parent: 'j8w4z22m',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz7v',
-								_parent: 'j8vz2s28',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz7w',
-								_parent: 'j8vz2s28',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7x',
-								_parent: 'j8vz2s28',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz7y',
-								_parent: 'j8vz2s28',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz7z',
-								_parent: 'j8vz2s28',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz80',
-								_parent: 'j8vz2s28',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:3	
 						},
-						validation: {
-							id: 'j8vz2s29',
-							_parent: 'j8w4z22m',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz81',
-								_parent: 'j8vz2s29',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz82',
-								_parent: 'j8vz2s29',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s2a',
-							_parent: 'j8w4z22m',
-							_type: 'table',
-							items: []
-						}
-					}, {
-						id: 'j8w4z2ax',
-						_parent: 'j8vz2s27',
-						_type: 'record',
-						name: 'audio',
-						default: true,
-						attr: '',
+						validation: {},
+						options: {}
+					},
+					audio: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2b',
-							_parent: 'j8w4z2ax',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz83',
-								_parent: 'j8vz2s2b',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz84',
-								_parent: 'j8vz2s2b',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz85',
-								_parent: 'j8vz2s2b',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz86',
-								_parent: 'j8vz2s2b',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz87',
-								_parent: 'j8vz2s2b',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz88',
-								_parent: 'j8vz2s2b',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns: 3
 						},
-						validation: {
-							id: 'j8vz2s2c',
-							_parent: 'j8w4z2ax',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz89',
-								_parent: 'j8vz2s2c',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8a',
-								_parent: 'j8vz2s2c',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s2d',
-							_parent: 'j8w4z2ax',
-							_type: 'table',
-							items: []
-						}
-					}, {
-						id: 'j8w4z2jb',
-						_parent: 'j8vz2s27',
-						_type: 'record',
-						name: 'img',
-						default: true,
-						attr: '',
+						validation: {},
+						options: {}
+					},
+					img: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2e',
-							_parent: 'j8w4z2jb',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8b',
-								_parent: 'j8vz2s2e',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz8c',
-								_parent: 'j8vz2s2e',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8d',
-								_parent: 'j8vz2s2e',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz8e',
-								_parent: 'j8vz2s2e',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8f',
-								_parent: 'j8vz2s2e',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8g',
-								_parent: 'j8vz2s2e',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns: 3
 						},
-						validation: {
-							id: 'j8vz2s2f',
-							_parent: 'j8w4z2jb',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8h',
-								_parent: 'j8vz2s2f',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8i',
-								_parent: 'j8vz2s2f',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s2g',
-							_parent: 'j8w4z2jb',
-							_type: 'table',
-							items: []
-						}
-					}, {
-						id: 'j8w4z2su',
-						_parent: 'j8vz2s27',
-						_type: 'record',
-						name: 'document',
-						default: true,
-						attr: '',
+						validation: {},
+						options: {}
+					},
+					document: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2h',
-							_parent: 'j8w4z2su',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8j',
-								_parent: 'j8vz2s2h',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz8k',
-								_parent: 'j8vz2s2h',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8l',
-								_parent: 'j8vz2s2h',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz8m',
-								_parent: 'j8vz2s2h',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8n',
-								_parent: 'j8vz2s2h',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8o',
-								_parent: 'j8vz2s2h',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:3
 						},
-						validation: {
-							id: 'j8vz2s2i',
-							_parent: 'j8w4z2su',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8p',
-								_parent: 'j8vz2s2i',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8q',
-								_parent: 'j8vz2s2i',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
-						options: {
-							id: 'j8vz2s2j',
-							_parent: 'j8w4z2su',
-							_type: 'table',
-							items: []
-						}
-					}]
+						validation: {},
+						options: {}
+					}
 				}
 			}, {
-				id: 'iz4t4lb8',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'file',
+				id:'iz4t4lb8',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'file',
 				inputs: {
-					id: 'j8vz2s2k',
-					_parent: 'iz4t4lb8',
-					_type: 'table',
-					items: [{
-						id: 'j8w4z30t',
-						_parent: 'j8vz2s2k',
-						_type: 'record',
-						name: 'file',
-						default: true,
-						attr: '',
+					file: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2l',
-							_parent: 'j8w4z30t',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8r',
-								_parent: 'j8vz2s2l',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz8s',
-								_parent: 'j8vz2s2l',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8t',
-								_parent: 'j8vz2s2l',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz8u',
-								_parent: 'j8vz2s2l',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8v',
-								_parent: 'j8vz2s2l',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8w',
-								_parent: 'j8vz2s2l',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:3
 						},
-						validation: {
-							id: 'j8vz2s2m',
-							_parent: 'j8w4z30t',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8x',
-								_parent: 'j8vz2s2m',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz8y',
-								_parent: 'j8vz2s2m',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s2n',
-							_parent: 'j8w4z30t',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz8z',
-								_parent: 'j8vz2s2n',
-								_type: 'record',
-								name: 'folder',
-								label: 'Folder',
-								default: '/images',
-								type: 'text',
-								required: true,
-								attr: ''
-							}, {
-								id: 'j8w6oz90',
-								_parent: 'j8vz2s2n',
-								_type: 'record',
-								name: 'delete',
-								label: 'delete file when disconnected',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz91',
-								_parent: 'j8vz2s2n',
-								_type: 'record',
-								name: 'uploads',
-								label: 'allow uploads',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz92',
-								_parent: 'j8vz2s2n',
-								_type: 'record',
-								name: 'existing',
-								label: 'allow existing',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							folder: {
+								label:'Folder',
+								default:'/images',
+								input:'text',
+								required:true,
+								attr:''
+							},
+							delete: {
+								label:'delete file when disconnected',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							uploads: {
+								label:'allow uploads',
+								default:true,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							existing: {
+								label:'allow existing',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}]
+					}
 				}
 			}, {
-				id: 'iz4t4lb8',
-				_parent: 'j8vz2s0u',
-				_type: 'record',
-				name: 'list',
+				id:'j95t2x40',
+				_parent:'j8vz2s0u',
+				_type:'record',
+				name:'list',
 				inputs: {
-					id: 'j8vz2s2o',
-					_parent: 'iz4t4lb8',
-					_type: 'table',
-					items: [{
-						id: 'j8w52lq8',
-						_parent: 'j8vz2s2o',
-						_type: 'record',
-						name: 'select',
-						default: true,
-						attr: '',
+					select: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2p',
-							_parent: 'j8w52lq8',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz93',
-								_parent: 'j8vz2s2p',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz94',
-								_parent: 'j8vz2s2p',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz95',
-								_parent: 'j8vz2s2p',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz96',
-								_parent: 'j8vz2s2p',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz97',
-								_parent: 'j8vz2s2p',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz98',
-								_parent: 'j8vz2s2p',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:3
 						},
-						validation: {
-							id: 'j8vz2s2q',
-							_parent: 'j8w52lq8',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz99',
-								_parent: 'j8vz2s2q',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9a',
-								_parent: 'j8vz2s2q',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s2r',
-							_parent: 'j8w52lq8',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9b',
-								_parent: 'j8vz2s2r',
-								_type: 'record',
-								name: 'source',
-								label: 'Source',
-								default: 'app',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'App Table',
-									value: 'j6e1p48u'
-								}, {
-									text: 'Web App',
-									value: 'j6e1peah'
-								}, {
-									text: 'CRM',
-									value: 'j6e1pflq'
-								}, {
-									text: 'Ecommerce',
-									value: 'j6e1pfy6'
-								}, {
-									text: 'BC Pie',
-									value: 'j6e1pg9a'
-								}]
-							}, {
-								id: 'j8w6oz9c',
-								_parent: 'j8vz2s2r',
-								_type: 'record',
-								name: 'list',
-								label: 'List',
-								default: '',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
+							source: {
+								label:'Source',
+								default:'app',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:false,
+								options: [
+									{text:'App Table', value:'j6e1p48u'}, 
+									{text:'Web App', value:'j6e1peah'}, 
+									{text:'CRM', value:'j6e1pflq'}, 
+									{text:'Ecommerce', value:'j6e1pfy6'}, 
+									{text:'BC Pie', value:'j6e1pg9a'}
+								]
+							},
+							list: {
+								label:'List',
+								default:'',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:false,
 								options: []
-							}, {
-								id: 'j8w6oz9d',
-								_parent: 'j8vz2s2r',
-								_type: 'record',
-								name: 'editable',
-								label: 'editable',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9e',
-								_parent: 'j8vz2s2r',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							},
+							editable: {
+								label:'editable',
+								default:true,
+								input:'boolean',
+								required:false,
+								attr:''
+							},
+							array: {
+								label:'array',
+								default:false,
+								input:'boolean',
+								required:false,
+								attr:''
+							}
 						}
-					}, {
-						id: 'j8w52m2l',
-						_parent: 'j8vz2s2o',
-						_type: 'record',
-						name: 'radio',
-						default: true,
-						attr: '',
+					},
+					radio: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2s',
-							_parent: 'j8w52m2l',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9f',
-								_parent: 'j8vz2s2s',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz9g',
-								_parent: 'j8vz2s2s',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9h',
-								_parent: 'j8vz2s2s',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz9i',
-								_parent: 'j8vz2s2s',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9j',
-								_parent: 'j8vz2s2s',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9k',
-								_parent: 'j8vz2s2s',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:3
 						},
-						validation: {
-							id: 'j8vz2s2t',
-							_parent: 'j8w52m2l',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9l',
-								_parent: 'j8vz2s2t',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9m',
-								_parent: 'j8vz2s2t',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s2u',
-							_parent: 'j8w52m2l',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9n',
-								_parent: 'j8vz2s2u',
-								_type: 'record',
-								name: 'source',
-								label: 'Source',
-								default: 'app',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'App Table',
-									value: 'j6e1p48u'
-								}, {
-									text: 'Web App',
-									value: 'j6e1peah'
-								}, {
-									text: 'CRM',
-									value: 'j6e1pflq'
-								}, {
-									text: 'Ecommerce',
-									value: 'j6e1pfy6'
-								}, {
-									text: 'BC Pie',
-									value: 'j6e1pg9a'
-								}]
-							}, {
-								id: 'j8w6oz9o',
-								_parent: 'j8vz2s2u',
-								_type: 'record',
-								name: 'list',
-								label: 'List',
-								default: '',
-								type: 'select',
-								required: true,
-								attr: 'data-bcpie-lists="source:[name=source];"',
-								editable: false,
+							source: {
+								label:'Source',
+								default:'app',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:false,
+								options: [
+									{text:'App Table', value:'j6e1p48u'}, 
+									{text:'Web App', value:'j6e1peah'}, 
+									{text:'CRM', value:'j6e1pflq'}, 
+									{text:'Ecommerce', value:'j6e1pfy6'}, 
+									{text:'BC Pie', value:'j6e1pg9a'}
+								]
+							},
+							list: {
+								label:'List',
+								default:'',
+								input:'select',
+								required:true,
+								attr:'data-bcpie-lists="source:[name=source];"',
+								editable:false,
 								options: []
-							}, {
-								id: 'j8w6oz9p',
-								_parent: 'j8vz2s2u',
-								_type: 'record',
-								name: 'scrollAfter',
-								label: 'Scroll After',
+							},
+							scrollAfter: {
+								label:'Scroll After',
 								default: 75,
-								type: 'number',
-								required: false,
-								attr: '',
+								input:'number',
+								required:false,
+								attr:'',
 								min: 20,
 								max: null
-							}]
+							}
 						}
-					}, {
-						id: 'j8w531zj',
-						_parent: 'j8vz2s2o',
-						_type: 'record',
-						name: 'radio',
-						default: true,
-						attr: '',
+					},
+					checkbox: {
+						default:true,
+						attr:'',
 						layout: {
-							id: 'j8vz2s2v',
-							_parent: 'j8w531zj',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9q',
-								_parent: 'j8vz2s2v',
-								_type: 'record',
-								name: 'label',
-								label: 'Label',
-								default: '',
-								type: 'text',
-								required: true,
-								attr: 'data-bcpie-sameas=\"copy:[name]; scope:form; scopeMode:closest; convert:title; event:change; breakonChange:true; eventNamespace:; copyOnLoad:false;\"'
-							}, {
-								id: 'j8w6oz9r',
-								_parent: 'j8vz2s2v',
-								_type: 'record',
-								name: 'tooltip',
-								label: 'Tooltip',
-								default: '',
-								type: 'text',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9s',
-								_parent: 'j8vz2s2v',
-								_type: 'record',
-								name: 'columns',
-								label: 'Columns',
-								default: 3,
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'shrink',
-									value: 'shrink'
-								}, {
-									text: 'expand',
-									value: 'auto'
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '1',
-									value: 1
-								}, {
-									text: '2',
-									value: 2
-								}, {
-									text: '3',
-									value: 3
-								}, {
-									text: '4',
-									value: 4
-								}, {
-									text: '5',
-									value: 5
-								}, {
-									text: '6',
-									value: 6
-								}, {
-									text: '7',
-									value: 7
-								}, {
-									text: '8',
-									value: 8
-								}, {
-									text: '9',
-									value: 9
-								}, {
-									text: '10',
-									value: 10
-								}, {
-									text: '11',
-									value: 11
-								}, {
-									text: '12',
-									value: 12
-								}]
-							}, {
-								id: 'j8w6oz9t',
-								_parent: 'j8vz2s2v',
-								_type: 'record',
-								name: 'tableView',
-								label: 'table view',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9u',
-								_parent: 'j8vz2s2v',
-								_type: 'record',
-								name: 'detailView',
-								label: 'detail view',
-								default: true,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9v',
-								_parent: 'j8vz2s2v',
-								_type: 'record',
-								name: 'readonly',
-								label: 'readonly',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
+							columns:3
 						},
-						validation: {
-							id: 'j8vz2s2w',
-							_parent: 'j8w531zj',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9w',
-								_parent: 'j8vz2s2w',
-								_type: 'record',
-								name: 'required',
-								label: 'required',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}, {
-								id: 'j8w6oz9x',
-								_parent: 'j8vz2s2w',
-								_type: 'record',
-								name: 'unique',
-								label: 'unique',
-								default: false,
-								type: 'boolean',
-								required: false,
-								attr: ''
-							}]
-						},
+						validation: {},
 						options: {
-							id: 'j8vz2s2x',
-							_parent: 'j8w531zj',
-							_type: 'table',
-							items: [{
-								id: 'j8w6oz9y',
-								_parent: 'j8vz2s2x',
-								_type: 'record',
-								name: 'source',
-								label: 'Source',
-								default: 'app',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
-								options: [{
-									text: 'App Table',
-									value: 'j6e1p48u'
-								}, {
-									text: 'Web App',
-									value: 'j6e1peah'
-								}, {
-									text: 'CRM',
-									value: 'j6e1pflq'
-								}, {
-									text: 'Ecommerce',
-									value: 'j6e1pfy6'
-								}, {
-									text: 'BC Pie',
-									value: 'j6e1pg9a'
-								}]
-							}, {
-								id: 'j8w6oz9z',
-								_parent: 'j8vz2s2x',
-								_type: 'record',
-								name: 'list',
-								label: 'List',
-								default: '',
-								type: 'select',
-								required: true,
-								attr: '',
-								editable: false,
+							source: {
+								label:'Source',
+								default:'app',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:false,
+								options: [
+									{text:'App Table', value:'j6e1p48u'}, 
+									{text:'Web App', value:'j6e1peah'}, 
+									{text:'CRM', value:'j6e1pflq'}, 
+									{text:'Ecommerce', value:'j6e1pfy6'}, 
+									{text:'BC Pie', value:'j6e1pg9a'}
+								]
+							},
+							list: {
+								label:'List',
+								default:'',
+								input:'select',
+								required:true,
+								attr:'',
+								editable:false,
 								options: []
-							}, {
-								id: 'j8w6oza0',
-								_parent: 'j8vz2s2x',
-								_type: 'record',
-								name: 'scrollAfter',
-								label: 'Scroll After',
+							},
+							scrollAfter: {
+								label:'Scroll After',
 								default: 75,
-								type: 'number',
-								required: false,
-								attr: '',
+								input:'number',
+								required:false,
+								attr:'',
 								min: 20,
 								max: null
-							}, {
-								id: 'j8w6oza1',
-								_parent: 'j8vz2s2x',
-								_type: 'record',
-								name: 'array',
-								label: 'array',
-								default: true,
-								type: 'boolean',
-								required: true,
-								attr: ''
-							}]
+							},
+							array: {
+								label:'array',
+								default:true,
+								input:'boolean',
+								required:true,
+								attr:''
+							}
 						}
-					}]
+					}
 				}
 			}]
 		}
