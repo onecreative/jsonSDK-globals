@@ -9,7 +9,7 @@ module.exports = {
 	jsonPath:'',
 	uploadPath:'',
 	tempPath:'',
-	destinationPrefix:'',
+	dataStoragePrefix:'',
 	tempName:'',
 	files: ['globals', 'schema', 'live', 'dataSources', 'paths', 'references', 'lineage', 'search'],
 	fields: {
@@ -26,19 +26,19 @@ module.exports = {
 			type:'String'
 		}, {
 			id: 3,
-			name:'destinationRecordID',
+			name:'dataStorageRecordID',
 			type:'String'
 		}, {
 			id: 4,
 			name:'mode',
 			type:'String'
 		}],
-		default: {
+		auto: {
 			name: {
 				values: {
 					name:'name',
 					label:'Name',
-					destination:'iyn6q8up',
+					dataStorage:'iyn6q8up',
 					type:'iz4t4jwh',
 					tableView:true,
 					required:true,
@@ -57,12 +57,14 @@ module.exports = {
 			id:'j8vz2s00',
 			_parent:'globals',
 			_type:'table',
+			default:'iyn6q8up',
 			items: [{
 				id:'iyn6q8up',
 				_parent:'j8vz2s00',
 				_type:'record',
 				name:'JSON',
 				field: {
+					typeDefault: 'iz4t4jwh',
 					types: {
 						iz4t4jwh: {map:'iz4t4jwh', force:{}},
 						iz4t4k7c: {map:'iz4t4k7c', force:{}},
@@ -82,6 +84,7 @@ module.exports = {
 				_parent:'j8vz2s00',
 				_type:'record',
 				name:'Web App',
+				type: 'iz4t4jwh',
 				field: {
 					types: {
 						iz4t4jwh: {map:'String', force:{array:false}},
@@ -733,6 +736,27 @@ module.exports = {
 								editable:false,
 								options: []
 							},
+							textPattern: {
+								label:'Text Pattern',
+								default:'{{name}}',
+								input:'text',
+								required:true,
+								attr:''
+							},
+							valuePattern: {
+								label:'Text Pattern',
+								default:'{{id}}',
+								input:'text',
+								required:true,
+								attr:'data-bcpie-listValue="true"'
+							},
+							reference: {
+								label:'reference',
+								default:false,
+								input:'checkbox',
+								required:false,
+								attr:''
+							},
 							editable: {
 								label:'editable',
 								default:true,
@@ -780,6 +804,20 @@ module.exports = {
 								editable:false,
 								options: []
 							},
+							textPattern: {
+								label:'Text Pattern',
+								default:'{{name}}',
+								input:'text',
+								required:true,
+								attr:''
+							},
+							valuePattern: {
+								label:'Text Pattern',
+								default:'{{id}}',
+								input:'text',
+								required:true,
+								attr:'data-bcpie-listValue="true"'
+							},
 							scrollAfter: {
 								label:'Scroll After',
 								default: 75,
@@ -788,6 +826,13 @@ module.exports = {
 								attr:'',
 								min: 20,
 								max: null
+							},
+							reference: {
+								label:'reference',
+								default:false,
+								input:'checkbox',
+								required:false,
+								attr:''
 							}
 						}
 					},
@@ -822,6 +867,20 @@ module.exports = {
 								editable:false,
 								options: []
 							},
+							textPattern: {
+								label:'Text Pattern',
+								default:'{{name}}',
+								input:'text',
+								required:true,
+								attr:''
+							},
+							valuePattern: {
+								label:'Text Pattern',
+								default:'{{id}}',
+								input:'text',
+								required:true,
+								attr:'data-bcpie-listValue="true"'
+							},
 							scrollAfter: {
 								label:'Scroll After',
 								default: 75,
@@ -830,6 +889,13 @@ module.exports = {
 								attr:'',
 								min: 20,
 								max: null
+							},
+							reference: {
+								label:'reference',
+								default:false,
+								input:'checkbox',
+								required:false,
+								attr:''
 							},
 							array: {
 								label:'array',
